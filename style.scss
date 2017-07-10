@@ -111,13 +111,7 @@ $baseWidth:750;
 }
 
 * {
-    tap-highlight-color: transparent;
-    -webkit-tap-highlight-color: transparent;
-    -ms-tap-highlight-color: transparent;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    border: 0
 }
 
 a,
@@ -222,6 +216,17 @@ section {
     display: block
 }
 
+html,
+body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+    -ms-tap-highlight-color: transparent;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -229,6 +234,7 @@ html {
 body {
     line-height: 1.5;
     font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
 }
 
 ol,
@@ -279,7 +285,8 @@ html {
 a {
     text-decoration: none;
     background: transparent;
-    -webkit-tap-highlight-color: transparent
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
 }
 
 img {
