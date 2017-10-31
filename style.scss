@@ -1,5 +1,5 @@
 //初始化样式
-$baseFontSize:12;
+$baseFontSize:11;
 $baseWidth:750;
 @function px2rem($px) {
     @return ($px/$baseFontSize/2) * 1rem;
@@ -143,16 +143,16 @@ table{border-collapse: collapse; border-spacing: 0;}
 input,
 textarea{outline: 0; resize: none;}
 input{vertical-align:middle;}
-img{vertical-align: middle;}
+img{width:100%;max-width:750px;vertical-align: middle;}
 a{text-decoration: none; background: transparent; -webkit-tap-highlight-color: transparent;outline:none;}
 a:link{color:#03c;}
 a:visited{color:#666;}
 a:hover{color:#f30;}
 a:active{color:#c30;}
+.fr{float: right;}
+.fl{float: left;}
 .clearfix::before{content: ' '; display: table;}
 .clearfix::after{content: ' '; display: table; clear: both;}
-.fr{float: left;}
-.fl{float: right;}
 @media screen and (min-width:321px) and (max-width:375px){html{font-size:11px}}
 @media screen and (min-width:376px) and (max-width:414px){html{font-size:12px}} 
 @media screen and (min-width:415px) and (max-width:639px){html{font-size:15px}} 
