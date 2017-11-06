@@ -6,8 +6,8 @@ $baseWidth:750;
 }
 
 //设置百分比
-@function percent($val) {
-    @return ($val/$baseWidth)*100%;
+@function percent($val,$width) {
+    @return ($val/$width)*100%;
 }
 
 //@mixin  淘宝布局方式
